@@ -1,0 +1,143 @@
+/* === Global Theme Variables === */
+:root {
+  --bg-color: #e0e0e0;
+  --text-color: #333;
+  --container-bg: #e0e0e0;
+  --button-bg: #f0f0f0;
+  --button-text: #333;
+  --shadow-light: #ffffff;
+  --shadow-dark: #c1c1c1;
+  --togglebg: #ccc;
+  --roundcolor: #fff;
+  --toggleslider: #333;
+  --togglesliderColor: #333;
+}
+
+/* === Dark Theme === */
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #e4e4e4;
+  --container-bg: #1e1e1e;
+  --button-bg: #2a2a2a;
+  --button-text: #e4e4e4;
+  --shadow-light: #2b2b2b;
+  --shadow-dark: #141414;
+  --togglebg: #444;
+  --roundcolor: #bbb;
+  --toggleslider: #888;
+  --togglesliderColor: #eee;
+}
+
+/* === Reset & Base === */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+/* === Container === */
+.container {
+  background: var(--container-bg);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px var(--shadow-dark),
+              -8px -8px 16px var(--shadow-light);
+  width: 350px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+/* === Result Box === */
+.result-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+textarea#PasswordResult {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: var(--container-bg);
+  color: var(--text-color);
+  font-size: 1.1rem;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: inset 4px 4px 8px var(--shadow-dark),
+              inset -4px -4px 8px var(--shadow-light);
+}
+
+/* === Settings === */
+.settings {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.setting label {
+  font-size: 0.95rem;
+}
+
+/* === Buttons === */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px var(--shadow-dark),
+              -4px -4px 8px var(--shadow-light);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  box-shadow: inset 3px 3px 6px var(--shadow-dark),
+              inset -3px -3px 6px var(--shadow-light);
+}
+
+.btn-large {
+  flex: 2;
+}
+
+/* === Responsive === */
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+  textarea#PasswordResult {
+    height: 40px;
+  }
+}
