@@ -1,29 +1,35 @@
-# Password Generator
+# 🔐 Password Generator
 
-A neat and lightweight password generator web app built with a neumorphic design.
+A simple and modern tool to generate strong and secure passwords.  
+🖥️ [Live Demo](https://mohammedelkhalfaouy.github.io/Password-Generator/)
 
-## Demo
+---
 
-Check it out live: https://mohammed-el-khalfaouy.github.io/Password-Generator/
+### 🚀 Built With
+- HTML  
+- CSS  
+- JavaScript  
 
-## Features
+---
 
-- Choose password length.  
-- Include or exclude:  
-  - Uppercase letters  
-  - Lowercase letters  
-  - Numbers  
-  - Symbols  
-- Generate a secure password with a single click.  
-- Copy the generated password to the clipboard.  
-- Light/dark theme switch (neumorphism style).
+### ✨ Features
+- Generates random strong passwords  
+- Adjustable length and character options  
+- Copy-to-clipboard functionality  
+- Clean and responsive design  
 
-## Getting Started
+---
 
-### Prerequisites  
-You only need a modern web browser — no server or build tool required.
+### 📦 Setup
+```bash
+git clone https://github.com/mohammedelkhalfaouy/Password-Generator.git
+cd Password-Generator
+open index.html
 
-### Installation  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/mohammed-el-khalfaouy/Password-Generator.git
+👨‍💻 Author
+
+Mohammed El Khalfaouy
+
+
+🔒 Secure your world, one password at a time.
+
